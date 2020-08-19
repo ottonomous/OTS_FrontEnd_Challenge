@@ -23,15 +23,15 @@
 
 #nav {
   padding: 30px;
+}
 
-  a {
-    color: #27b1ff;
-    font-weight: bold;
+a {
+  color: #27b1ff;
+  font-weight: bold;
 
-    &.router-link-exact-active {
-      color: #2c3e50;
-      text-decoration: none;
-    }
+  &.router-link-exact-active {
+    color: #2c3e50;
+    text-decoration: none;
   }
 }
 
