@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <img alt="Prefect logo" class="logo" src="./assets/logo.svg" />
-
+    <h2>
+      Front End Software Engineer Challenge
+    </h2>
     <div id="nav">
       <router-link to="/">Instructions</router-link> |
       <router-link to="/about">Challenge #1</router-link>

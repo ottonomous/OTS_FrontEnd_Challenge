@@ -10,10 +10,22 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="instructions">
     <h2>
-      Welcome to the Prefect Front End Software Engineer challenge!
+      Instructions
     </h2>
+    <p>
+      If you've made it this far you've already completed the first step by
+      installing the project dependencies and starting your Vue development
+      server... good job!
+    </p>
     <HelpfulLinks />
   </div>
 </template>
+
+<style lang="scss" scoped>
+.instructions {
+  margin: auto;
+  max-width: 1000px;
+}
+</style>
