@@ -44,7 +44,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="text-center">
     <h3>Installed Vue Plugins</h3>
     <ul>
       <li v-for="link in cliLinks" :key="link.title">

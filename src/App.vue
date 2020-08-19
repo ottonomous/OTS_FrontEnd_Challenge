@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Prefect logo" class="logo" src="./assets/logo.svg" />
-    <h2>
-      Front End Software Engineer Challenge
-    </h2>
+    <div class="text-center">
+      <img alt="Prefect logo" class="logo" src="./assets/logo.svg" />
+      <h2>
+        Front End Software Engineer Challenge
+      </h2>
+    </div>
     <div id="nav">
       <router-link to="/">Instructions</router-link> |
       <router-link to="/about">Challenge #1</router-link>
@@ -19,12 +21,12 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
 #nav {
   padding: 30px;
+  text-align: center;
 }
 
 a {
@@ -39,6 +41,10 @@ a {
 
 .logo {
   max-width: 300px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .fade-enter-active,
