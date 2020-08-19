@@ -1,10 +1,14 @@
 <template>
   <div id="app">
+    <img alt="Prefect logo" class="logo" src="./assets/logo.svg" />
+
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Instructions</router-link> |
+      <router-link to="/about">Challenge #1</router-link>
     </div>
-    <router-view />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -21,12 +25,32 @@
   padding: 30px;
 
   a {
+    color: #27b1ff;
     font-weight: bold;
-    color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #2c3e50;
+      text-decoration: none;
     }
   }
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  opacity: 1;
+  transition: opacity ease-in-out 150ms;
+}
+
+.fade-leave-active {
+  transition: opacity ease-in-out 150ms;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
