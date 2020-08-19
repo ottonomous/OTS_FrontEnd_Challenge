@@ -25,10 +25,11 @@ export default {
       problems and implement your code - these questions are not designed to
       trick you.
     </p>
-    <em>
-      Comments are a great way to explain your thinking and the choices you make
-      as you work on each exercise.
-    </em>
+    <div class="info-box text-caption ma-auto">
+      <em>Tip:</em> Comments are a great way to explain your thinking and the
+      choices you make as you work on each exercise, particularly in spots where
+      you're less sure of your solution.
+    </div>
     <HelpfulLinks />
   </div>
 </template>

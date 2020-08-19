@@ -47,6 +47,22 @@ a {
   text-align: center;
 }
 
+.ma-auto {
+  margin: auto;
+}
+
+.info-box {
+  border-left: 6px solid grey;
+  display: block;
+  max-width: 500px;
+  padding: 8px 24px;
+  width: fit-content;
+}
+
+.text-caption {
+  font-size: 0.85rem;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   opacity: 1;
