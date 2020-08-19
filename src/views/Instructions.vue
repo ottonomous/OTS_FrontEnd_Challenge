@@ -1,9 +1,8 @@
 <script>
-// @ is an alias to /src
 import HelpfulLinks from '@/components/HelpfulLinks.vue'
 
 export default {
-  name: 'Home',
+  name: 'Instructions',
   components: {
     HelpfulLinks
   }
@@ -11,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <div class="home">
+  <div>
     <HelpfulLinks />
   </div>
 </template>
