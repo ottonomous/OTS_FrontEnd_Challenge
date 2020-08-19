@@ -11,6 +11,9 @@ export default {
 
 <template>
   <div>
+    <h2>
+      Welcome to the Prefect Front End Software Engineer challenge!
+    </h2>
     <HelpfulLinks />
   </div>
 </template>

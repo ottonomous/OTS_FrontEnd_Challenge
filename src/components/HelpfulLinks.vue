@@ -17,7 +17,7 @@ export default {
         {
           title: 'ESLint',
           href:
-            'https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslintl'
+            'https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint'
         }
       ],
       helpfulLinks: [
