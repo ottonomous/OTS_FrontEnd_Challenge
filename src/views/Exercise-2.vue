@@ -11,26 +11,38 @@ export default {}
         Exercise 2
       </h2>
       <p>
-        Some text here
+        You're building an application that allows users to modify some text via
+        a text input. The user can save their input and persist it for the next
+        time they visit the page. There's just one problem: users have given
+        feedback that they sometimes navigate away from the page unintentionally
+        and lose their work! You've been asked to resolve the following user
+        stories to fix this.
       </p>
 
-      <ul class="instruction-list ma-auto">
+      <ul class="instruction-list ma-auto my-6">
         <strong>A user can...</strong>
         <li>
-          do stuff
+          see a dialog box reminding them to save their work before they
+          navigate away from the page
+          <ul class="sublist">
+            <li>
+              the dialog should contain both a button that will allow the user
+              to save their work and a button that will allow the user to
+              discard their changes
+            </li>
+            <li>
+              no matter the choice a user makes, they should be navigated to the
+              next page
+            </li>
+          </ul>
         </li>
-      </ul>
-
-      <ul class="instruction-list ma-auto my-6">
-        <strong>A developer can...</strong>
         <li>
-          do stuff
+          see their previously saved work when they navigate back to the page
         </li>
       </ul>
 
       <p class="my-6">
-        Modify the following component as you see fit to accomplish the above
-        stories.
+        Modify the components as you see fit to accomplish the above stories.
       </p>
 
       <hr />
@@ -39,7 +51,7 @@ export default {}
 
     <!-- You may modify any code beneath this line -->
     <div class="exercise-container">
-      <div>exercise</div>
+      <router-view />
     </div>
   </div>
 </template>

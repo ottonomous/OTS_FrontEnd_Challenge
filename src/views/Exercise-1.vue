@@ -27,13 +27,13 @@ export default {
         following user and developer stories.
       </p>
 
-      <div class="info-box text-caption ma-auto my-6">
+      <div class="info-box text-caption ma-auto">
         <em>Tip:</em> There are many ways to achieve these user stories. You
         should read through the source component to get an understanding of how
         it works.
       </div>
 
-      <ul class="instruction-list ma-auto">
+      <ul class="instruction-list ma-auto my-6">
         <strong>A user can...</strong>
         <li>
           see when a message is
