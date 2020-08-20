@@ -48,7 +48,7 @@ export default {
         <li>
           choose to override the styling and contents of the title of the
           component (for example to change the title from "Inbox" to "My Inbox"
-          and to add a user avatar)
+          or to add a user avatar)
         </li>
         <li>
           change the active color of selected messages

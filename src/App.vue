@@ -98,6 +98,14 @@ hr {
   margin-right: 8px;
 }
 
+.mr-4 {
+  margin-right: 16px;
+}
+
+.mr-6 {
+  margin-right: 24px;
+}
+
 .mt-4 {
   margin-top: 16px;
 }
