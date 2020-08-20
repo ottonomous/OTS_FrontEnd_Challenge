@@ -50,8 +50,32 @@ export default {}
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <div class="exercise-container">
-      <router-view />
+    <div class="exercise-container exercise-2" style="">
+      <div class="nav">
+        <router-link :to="{ name: 'page-1' }">page 1</router-link>
+        <span class="nav-divider" />
+        <router-link :to="{ name: 'page-2' }">page 2</router-link>
+      </div>
+
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.exercise-2 {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
+  min-width: 700px;
+  min-height: 700px;
+  padding: 12px 24px;
+}
+
+a {
+  color: #76d7c4;
+}
+</style>
