@@ -107,24 +107,29 @@ hr {
 }
 
 .mr-2 {
-  margin-right: 8px;
+  margin-right: 1rem;
 }
 
 .mr-4 {
-  margin-right: 16px;
+  margin-right: 2rem;
 }
 
 .mr-6 {
-  margin-right: 24px;
+  margin-right: 3rem;
 }
 
 .mt-4 {
-  margin-top: 16px;
+  margin-top: 2rem;
 }
 
 .my-6 {
-  margin-bottom: 24px;
-  margin-top: 24px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.my-8 {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .user-select-none {

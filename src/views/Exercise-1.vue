@@ -60,6 +60,11 @@ export default {
         </li>
       </ul>
 
+      <p class="my-6">
+        Modify the following component as you see fit to accomplish the above
+        stories.
+      </p>
+
       <hr />
     </div>
     <!-- Please do not modify the code between these comments! -->
