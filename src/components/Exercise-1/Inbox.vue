@@ -2,8 +2,27 @@
 import { mapGetters } from 'vuex'
 
 export default {
+  data() {
+    return {
+      currentMessage: null,
+      selectedMessages: []
+    }
+  },
   computed: {
-    ...mapGetters(['messages'])
+    ...mapGetters(['messages']),
+    selectionLength() {
+      return this.selectedMessages.length
+    }
+  },
+  methods: {
+    toggleSelection(selection) {
+      const index = this.selectedMessages.findIndex(
+        message => message.id == selection.id
+      )
+
+      if (index > -1) this.selectedMessages.splice(index, 1)
+      else this.selectedMessages.push(selection)
+    }
   }
 }
 </script>
@@ -11,7 +30,15 @@ export default {
 <template>
   <div class="inbox">
     <div class="title">
-      <div class="text-h2">Inbox</div>
+      <div class="text-h2">
+        {{
+          selectionLength > 0
+            ? `${selectionLength} message${
+                selectionLength == 1 ? '' : 's'
+              } selected`
+            : 'Inbox'
+        }}
+      </div>
       <div>
         <i class="fas fa-search fa-lg mr-6" />
         <i class="fas fa-ellipsis-v fa-lg" />
@@ -19,8 +46,22 @@ export default {
     </div>
 
     <div class="content">
-      <div v-for="message in messages" class="ripple" :key="message.id">
-        {{ message.from }}
+      <div
+        v-for="message in messages"
+        class="message ripple"
+        :key="message.id"
+        @click="currentMessage = message"
+      >
+        <div class="action" @click.stop="toggleSelection(message)">
+          <i class="fas fa-check-square"></i>
+        </div>
+        <div>
+          <div class="from">{{ message.from }}</div>
+          <div class="subject">{{ message.subject }}</div>
+        </div>
+        <div class="timestamp">
+          {{ message.timestamp }}
+        </div>
       </div>
     </div>
   </div>
@@ -41,9 +82,30 @@ export default {
     justify-content: space-between;
     padding: 12px 24px;
   }
+}
 
-  .content {
-    padding: 12px 24px;
+.message {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 12px 24px;
+
+  .action {
+    margin: 24px 24px 24px 0;
+  }
+
+  .from {
+    font-weight: bold;
+  }
+
+  .subject {
+    font-size: 0.85rem;
+  }
+
+  .timestamp {
+    font-size: 0.75rem;
+    margin-left: auto;
   }
 }
 

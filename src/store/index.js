@@ -11,7 +11,8 @@ const state = {
       from: 'Sally Barnes',
       subject: 'Project Guidelines',
       message:
-        'Hi! Do you have time to discuss the project guidelines tomorrow afternoon?'
+        'Hi! Do you have time to discuss the project guidelines tomorrow afternoon?',
+      timestamp: '2hrs'
     }
   ]
 }
