@@ -117,6 +117,10 @@ hr {
   margin: auto;
 }
 
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
 .mr-2 {
   margin-right: 1rem;
 }

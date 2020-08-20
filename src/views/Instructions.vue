@@ -105,7 +105,7 @@ export default {
 
       <pre>
   <code>
-    <span class="mr-2 user-select-none">$</span>mv public/index-template.html public/index.html && \
+    <span class="mr-1 user-select-none">$</span>mv public/index-template.html public/index.html && \
       rm public/{*.png,*.xml,*.ico,*.svg,*.webmanifest} && \
       mv src/assets/vue-logo.svg src/assets/logo.svg
   </code>
