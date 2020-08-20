@@ -8,7 +8,8 @@
     </div>
     <div id="nav">
       <router-link to="/">Instructions</router-link> |
-      <router-link to="/exercise-1">Exercise #1</router-link>
+      <router-link to="/exercise-1">Exercise #1</router-link> |
+      <router-link to="/exercise-2">Exercise #2</router-link>
     </div>
     <transition name="fade" mode="out-in">
       <router-view />
