@@ -97,12 +97,16 @@ const state = {
       timestamp: '8:23 AM',
       urgent: false
     }
-  ]
+  ],
+  savedInput: 'Some user input'
 }
 
 const getters = {
   messages(state) {
     return state.messages
+  },
+  savedInput(state) {
+    return state.savedInput
   }
 }
 

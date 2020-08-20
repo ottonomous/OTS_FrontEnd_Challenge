@@ -1,7 +1,40 @@
 <script>
-export default {}
+import { mapGetters } from 'vuex'
+export default {
+  data() {
+    return {
+      input: null
+    }
+  },
+  computed: {
+    ...mapGetters(['savedInput'])
+  },
+  mounted() {
+    this.input = this.savedInput
+  }
+}
 </script>
 
 <template>
-  <div>Page 1</div>
+  <div class="container">
+    <textarea v-model="input" placeholder="Type something here..." />
+  </div>
 </template>
+
+<style lang="scss" scoped>
+.container {
+  display: flex;
+}
+
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: auto;
+  min-height: 200px;
+  outline-color: #76d7c4;
+  overflow: auto;
+  resize: none;
+  width: 85%;
+}
+</style>
