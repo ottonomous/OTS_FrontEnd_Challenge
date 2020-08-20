@@ -34,8 +34,8 @@ export default {
 </script>
 
 <template>
-  <div class="message ripple">
-    <div class="action" @click.prevent="toggleActive">
+  <div @click.prevent="toggleActive" class="message ripple">
+    <div class="action">
       <i class="far fa-lg" :class="iconClass" />
     </div>
     <div>

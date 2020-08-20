@@ -29,7 +29,7 @@ export default {
       else this.selectedMessages.push(selection)
     },
     viewMessage() {
-      // Coming soon...
+      // For another view...
     }
   }
 }
@@ -60,7 +60,6 @@ export default {
         :message="message"
         @select="toggleSelection"
         @unselect="toggleSelection"
-        @click="viewMessage"
       />
     </div>
   </div>
