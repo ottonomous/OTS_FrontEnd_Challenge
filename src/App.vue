@@ -39,17 +39,29 @@
   }
 }
 
-.instructions {
-  margin: auto;
-  max-width: 1000px;
+.exercise-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
 
-  .instruction-list {
-    font-size: 1.25rem;
-    max-width: 750px;
+  .instructions-container {
+    margin: auto;
+    max-width: 1000px;
 
-    li {
-      margin: 16px auto;
+    .instruction-list {
+      font-size: 1.25rem;
+      max-width: 750px;
+
+      li {
+        margin: 16px auto;
+      }
     }
+  }
+
+  .exercise-container {
+    max-width: 1000px;
+    margin: auto;
   }
 }
 
