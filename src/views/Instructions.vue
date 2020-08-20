@@ -14,13 +14,20 @@ export default {
     <h2>
       Instructions
     </h2>
-    <h4>
+    <h3>
       Overview
-    </h4>
+    </h3>
     <p>
       If you've made it this far you've already completed the first step by
       installing the project dependencies and starting your Vue development
       server... good job!
+    </p>
+
+    <p>
+      <strong>
+        Please read all instructions carefully before you begin to work on the
+        exercises.
+      </strong>
     </p>
 
     <p>
@@ -45,9 +52,9 @@ export default {
 
     <hr />
 
-    <h4>
+    <h3>
       Submission
-    </h4>
+    </h3>
     <p>
       This project should be submitted by adding
       <a href="https://github.com/znicholasbrown" target="_blank"
@@ -63,9 +70,9 @@ export default {
 
     <hr />
 
-    <h4>
+    <h3>
       Making the repo public
-    </h4>
+    </h3>
     <p>
       <u>The work you do on this project is your own</u>. As such, you can make
       it publicly available at your discretion (on your GitHub, as part of a
