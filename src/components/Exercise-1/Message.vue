@@ -12,8 +12,10 @@ export default {
     }
   },
   computed: {
+    fromClass() {
+      return this.isActive ? 'green' : 'black'
+    },
     iconClass() {
-      console.log(this.isActive ? 'fa-check-square' : 'fa-square')
       return this.isActive ? 'fa-check-square' : 'fa-square'
     }
   },
@@ -26,7 +28,6 @@ export default {
       }
 
       this.isActive = !this.isActive
-      console.log(this.isActive)
     }
   }
 }
@@ -38,7 +39,7 @@ export default {
       <i class="far fa-lg" :class="iconClass" />
     </div>
     <div>
-      <div class="from">{{ message.from }}</div>
+      <div class="from" :class="fromClass">{{ message.from }}</div>
       <div class="subject">{{ message.subject }}</div>
     </div>
     <div class="timestamp">
@@ -61,6 +62,15 @@ export default {
 
   .from {
     font-weight: bold;
+    transition: all 250ms;
+
+    &.black {
+      color: #2c3e50;
+    }
+
+    &.green {
+      color: #76d7c4;
+    }
   }
 
   .subject {
