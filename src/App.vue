@@ -22,7 +22,7 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 24px;
+  padding: 24px 24px 248px 24px;
 }
 
 #nav {
@@ -39,17 +39,29 @@
   }
 }
 
-.instructions {
-  margin: auto;
-  max-width: 1000px;
+.exercise-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
 
-  .instruction-list {
-    font-size: 1.25rem;
-    max-width: 750px;
+  .instructions-container {
+    margin: auto;
+    max-width: 1000px;
 
-    li {
-      margin: 16px auto;
+    .instruction-list {
+      font-size: 1.25rem;
+      max-width: 750px;
+
+      li {
+        margin: 16px auto;
+      }
     }
+  }
+
+  .exercise-container {
+    max-width: 1000px;
+    margin: auto;
   }
 }
 
@@ -83,7 +95,7 @@ hr {
 }
 
 .logo {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .text-center {
@@ -95,24 +107,29 @@ hr {
 }
 
 .mr-2 {
-  margin-right: 8px;
+  margin-right: 1rem;
 }
 
 .mr-4 {
-  margin-right: 16px;
+  margin-right: 2rem;
 }
 
 .mr-6 {
-  margin-right: 24px;
+  margin-right: 3rem;
 }
 
 .mt-4 {
-  margin-top: 16px;
+  margin-top: 2rem;
 }
 
 .my-6 {
-  margin-bottom: 24px;
-  margin-top: 24px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.my-8 {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .user-select-none {

@@ -1,17 +1,22 @@
 <script>
 import Inbox from '@/components/Exercise-1/Inbox'
+import { mapGetters } from 'vuex'
 
 export default {
   components: {
     Inbox
+  },
+  computed: {
+    ...mapGetters(['messages'])
   }
 }
 </script>
 
 <template>
-  <div>
+  <!-- You may modify any code above this line -->
+  <div class="exercise-grid">
     <!-- Please do not modify the code between these comments! -->
-    <div class="instructions">
+    <div class="instructions-container">
       <h2>
         Exercise 1
       </h2>
@@ -55,19 +60,18 @@ export default {
         </li>
       </ul>
 
+      <p class="my-6">
+        Modify the following component as you see fit to accomplish the above
+        stories.
+      </p>
+
       <hr />
     </div>
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <div class="exercise-container ma-auto">
-      <Inbox />
+    <div class="exercise-container">
+      <Inbox :messages="messages" />
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.exercise-container {
-  max-width: 1000px;
-}
-</style>
