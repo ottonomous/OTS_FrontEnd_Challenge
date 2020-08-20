@@ -95,7 +95,7 @@ hr {
 }
 
 .logo {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .text-center {
