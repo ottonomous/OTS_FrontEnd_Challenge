@@ -34,7 +34,7 @@ export default {
 
 <template>
   <div class="message ripple">
-    <div class="action" @click="toggleActive">
+    <div class="action" @click.prevent="toggleActive">
       <i class="far fa-lg" :class="iconClass" />
     </div>
     <div>
@@ -78,12 +78,13 @@ export default {
   transition: background 800ms;
 
   &:hover {
-    background: #eee radial-gradient(circle, transparent 1%, #eee 1%)
+    background: rgba(133, 146, 158, 0.05)
+      radial-gradient(circle, transparent 1%, rgba(133, 146, 158, 0.05) 1%)
       center/15000%;
   }
 
   &:active {
-    background-color: #ccc;
+    background-color: rgba(133, 146, 158, 0.05);
     background-size: 100%;
     transition: background 0s;
   }
