@@ -104,10 +104,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-h4 {
-  margin-top: 64px;
-}
-
 .instructions {
   margin: auto;
   max-width: 1000px;

@@ -18,10 +18,11 @@
 
 <style lang="scss">
 #app {
+  color: #2c3e50;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  padding: 24px;
 }
 
 #nav {
@@ -49,7 +50,7 @@ hr {
   border: 0;
   border-radius: 4px;
   height: 3px;
-  margin: 24px 5%;
+  margin: 48px 5%;
 }
 
 .logo {
