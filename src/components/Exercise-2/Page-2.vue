@@ -1,7 +1,32 @@
 <script>
-export default {}
+import { mapGetters } from 'vuex'
+
+export default {
+  computed: {
+    ...mapGetters(['savedInput'])
+  },
+  mounted() {
+    this.input = this.savedInput
+  }
+}
 </script>
 
 <template>
-  <div>Page 2</div>
+  <div class="container">
+    <h3>Page 2</h3>
+    <div>
+      <h4>Saved input:</h4>
+      <div>
+        {{ savedInput }}
+      </div>
+    </div>
+  </div>
 </template>
+
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+</style>

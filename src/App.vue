@@ -7,7 +7,7 @@
       </h2>
     </div>
     <div class="nav">
-      <router-link to="/">Instructions</router-link>
+      <router-link to="/" exact>Instructions</router-link>
       <span class="nav-divider" />
       <router-link to="/exercise-1">Exercise #1</router-link>
       <span class="nav-divider" />
@@ -35,7 +35,7 @@
   a {
     text-decoration: underline;
 
-    &.router-link-exact-active {
+    &.router-link-active {
       color: #2c3e50;
       text-decoration: none;
     }

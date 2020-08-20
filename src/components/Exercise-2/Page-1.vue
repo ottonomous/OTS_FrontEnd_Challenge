@@ -17,6 +17,7 @@ export default {
 
 <template>
   <div class="container">
+    <h3>Page 1</h3>
     <textarea v-model="input" placeholder="Type something here..." />
   </div>
 </template>
@@ -24,6 +25,8 @@ export default {
 <style lang="scss" scoped>
 .container {
   display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 textarea {
