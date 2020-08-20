@@ -29,11 +29,21 @@ export default {
       problems and implement your code - these questions are not designed to
       trick you.
     </p>
-    <div class="info-box text-caption ma-auto">
+    <div class="info-box text-caption ma-auto my-6">
       <em>Tip:</em> Comments are a great way to explain your thinking and the
       choices you make as you work on each exercise, particularly in spots where
       you're less sure of your solution.
     </div>
+
+    <p>
+      No additional packages or libraries are required to complete this
+      challenge but you may add any that you wish. Please do not modify this
+      instructions component (found at <code>/src/views/Instructions.vue</code>)
+      or any of the instruction text for the exercise (these will be clearly
+      denoted in the code) until your submission has been graded.
+    </p>
+
+    <hr />
 
     <h4>
       Submission
@@ -43,8 +53,15 @@ export default {
       <a href="https://github.com/znicholasbrown" target="_blank"
         >@znicholasbrown</a
       >
-      as a collaborator to your forked repository on GitHub.
+      as a collaborator to your forked repository on GitHub. Once you've done
+      so, please send an email to
+      <a href="mailto:nicholas@prefect.io" target="_blank"
+        >nicholas@prefect.io</a
+      >
+      to confirm your submission.
     </p>
+
+    <hr />
 
     <h4>
       Making the repo public
@@ -79,6 +96,8 @@ export default {
       mv src/assets/vue-logo.svg src/assets/logo.svg
   </code>
 </pre>
+
+    <hr />
 
     <HelpfulLinks />
   </div>

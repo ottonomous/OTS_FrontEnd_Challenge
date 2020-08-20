@@ -44,6 +44,14 @@ a {
   text-decoration: none;
 }
 
+hr {
+  background-color: #eee;
+  border: 0;
+  border-radius: 4px;
+  height: 3px;
+  margin: 24px 5%;
+}
+
 .logo {
   max-width: 300px;
 }
@@ -58,6 +66,11 @@ a {
 
 .mr-2 {
   margin-right: 8px;
+}
+
+.my-6 {
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 .user-select-none {
