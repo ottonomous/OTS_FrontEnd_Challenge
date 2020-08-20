@@ -145,4 +145,8 @@ hr {
 .fade-leave-to {
   opacity: 0;
 }
+
+.white {
+  color: #fff;
+}
 </style>

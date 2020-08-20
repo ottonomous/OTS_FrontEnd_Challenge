@@ -1,7 +1,12 @@
 <script>
+import Message from '@/components/Exercise-1/Message'
+
 import { mapGetters } from 'vuex'
 
 export default {
+  components: {
+    Message
+  },
   data() {
     return {
       currentMessage: null,
@@ -22,6 +27,9 @@ export default {
 
       if (index > -1) this.selectedMessages.splice(index, 1)
       else this.selectedMessages.push(selection)
+    },
+    viewMessage() {
+      // Coming soon...
     }
   }
 }
@@ -30,7 +38,7 @@ export default {
 <template>
   <div class="inbox">
     <div class="title">
-      <div class="text-h2">
+      <div class="text-h2 white">
         {{
           selectionLength > 0
             ? `${selectionLength} message${
@@ -40,29 +48,20 @@ export default {
         }}
       </div>
       <div>
-        <i class="fas fa-search fa-lg mr-6" />
-        <i class="fas fa-ellipsis-v fa-lg" />
+        <i class="fas fa-search fa-lg mr-6 white" />
+        <i class="fas fa-ellipsis-v fa-lg white" />
       </div>
     </div>
 
     <div class="content">
-      <div
+      <Message
         v-for="message in messages"
-        class="message ripple"
         :key="message.id"
-        @click="currentMessage = message"
-      >
-        <div class="action" @click.stop="toggleSelection(message)">
-          <i class="fas fa-check-square"></i>
-        </div>
-        <div>
-          <div class="from">{{ message.from }}</div>
-          <div class="subject">{{ message.subject }}</div>
-        </div>
-        <div class="timestamp">
-          {{ message.timestamp }}
-        </div>
-      </div>
+        :message="message"
+        @select="toggleSelection"
+        @unselect="toggleSelection"
+        @click="viewMessage"
+      />
     </div>
   </div>
 </template>
@@ -76,6 +75,7 @@ export default {
 
   .title {
     align-items: center;
+    background-color: #76d7c4;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
       0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
     display: flex;
@@ -84,49 +84,8 @@ export default {
   }
 }
 
-.message {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 12px 24px;
-
-  .action {
-    margin: 24px 24px 24px 0;
-  }
-
-  .from {
-    font-weight: bold;
-  }
-
-  .subject {
-    font-size: 0.85rem;
-  }
-
-  .timestamp {
-    font-size: 0.75rem;
-    margin-left: auto;
-  }
-}
-
 .text-h2 {
   font-size: 1.5em;
   font-weight: bold;
-}
-
-.ripple {
-  background-position: center;
-  transition: background 800ms;
-
-  &:hover {
-    background: #eee radial-gradient(circle, transparent 1%, #eee 1%)
-      center/15000%;
-  }
-
-  &:active {
-    background-color: #ccc;
-    background-size: 100%;
-    transition: background 0s;
-  }
 }
 </style>
