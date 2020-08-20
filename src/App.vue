@@ -46,6 +46,25 @@
   .instruction-list {
     font-size: 1.25rem;
     max-width: 750px;
+
+    li {
+      margin: 16px auto;
+    }
+  }
+}
+
+code {
+  background-color: #eee;
+  color: crimson;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+pre {
+  code {
+    color: #333;
+    display: block;
+    font-size: 0.9rem;
   }
 }
 

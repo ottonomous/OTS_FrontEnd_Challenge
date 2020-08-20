@@ -37,7 +37,7 @@ export default {
       trick you.
     </p>
     <div class="info-box text-caption ma-auto my-6">
-      <em>Tip:</em> Comments are a great way to explain your thinking and the
+      <em>Tip #1:</em> Comments are a great way to explain your thinking and the
       choices you make as you work on each exercise, particularly in spots where
       you're less sure of your solution.
     </div>
@@ -49,6 +49,11 @@ export default {
       or any of the instruction text for the exercise (these will be clearly
       denoted in the code) until your submission has been graded.
     </p>
+
+    <div class="info-box text-caption ma-auto my-6">
+      <em>Tip #2:</em> Be creative! This is an opportunity to express yourself
+      through code and design.
+    </div>
 
     <hr />
 
@@ -106,23 +111,9 @@ export default {
 
     <hr />
 
+    <h3>
+      Resources
+    </h3>
     <HelpfulLinks />
   </div>
 </template>
-
-<style lang="scss" scoped>
-code {
-  background-color: #eee;
-  color: crimson;
-  padding: 2px 4px;
-  border-radius: 4px;
-}
-
-pre {
-  code {
-    color: #333;
-    display: block;
-    font-size: 0.9rem;
-  }
-}
-</style>
