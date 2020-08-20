@@ -39,8 +39,11 @@ export default {
       Submission
     </h4>
     <p>
-      This project should be submitted by adding @znicholasbrown as a
-      collaborator to your forked repository on GitHub.
+      This project should be submitted by adding
+      <a href="https://github.com/znicholasbrown" target="_blank"
+        >@znicholasbrown</a
+      >
+      as a collaborator to your forked repository on GitHub.
     </p>
 
     <h4>

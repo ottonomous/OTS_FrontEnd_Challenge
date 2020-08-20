@@ -27,16 +27,21 @@
 #nav {
   padding: 30px;
   text-align: center;
+
+  a {
+    text-decoration: underline;
+
+    &.router-link-exact-active {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+  }
 }
 
 a {
   color: #27b1ff;
   font-weight: bold;
-
-  &.router-link-exact-active {
-    color: #2c3e50;
-    text-decoration: none;
-  }
+  text-decoration: none;
 }
 
 .logo {
