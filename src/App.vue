@@ -22,7 +22,7 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 24px;
+  padding: 24px 24px 248px 24px;
 }
 
 #nav {
