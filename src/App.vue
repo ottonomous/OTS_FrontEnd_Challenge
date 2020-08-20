@@ -39,6 +39,16 @@
   }
 }
 
+.instructions {
+  margin: auto;
+  max-width: 1000px;
+
+  .instruction-list {
+    font-size: 1.25rem;
+    max-width: 750px;
+  }
+}
+
 a {
   color: #27b1ff;
   font-weight: bold;

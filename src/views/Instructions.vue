@@ -111,11 +111,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.instructions {
-  margin: auto;
-  max-width: 1000px;
-}
-
 code {
   background-color: #eee;
   color: crimson;
