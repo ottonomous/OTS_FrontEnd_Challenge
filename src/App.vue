@@ -7,8 +7,10 @@
       </h2>
     </div>
     <div id="nav">
-      <router-link to="/">Instructions</router-link> |
-      <router-link to="/exercise-1">Exercise #1</router-link> |
+      <router-link to="/">Instructions</router-link>
+      <span class="nav-divider" />
+      <router-link to="/exercise-1">Exercise #1</router-link>
+      <span class="nav-divider" />
       <router-link to="/exercise-2">Exercise #2</router-link>
     </div>
     <transition name="fade" mode="out-in">
@@ -36,6 +38,14 @@
     &.router-link-exact-active {
       color: #2c3e50;
       text-decoration: none;
+    }
+  }
+  .nav-divider {
+    margin: auto 1rem;
+
+    &:before {
+      content: '|';
+      font-size: 1.25rem;
     }
   }
 }
