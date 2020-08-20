@@ -103,8 +103,9 @@ code {
 
 pre {
   code {
-    color: #000;
+    color: #333;
     display: block;
+    font-size: 0.9rem;
   }
 }
 </style>
