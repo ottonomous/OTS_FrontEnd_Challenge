@@ -1,11 +1,16 @@
 <script>
 import Message from '@/components/Exercise-1/Message'
 
-import { mapGetters } from 'vuex'
-
 export default {
   components: {
     Message
+  },
+  props: {
+    messages: {
+      type: Array,
+      required: false,
+      default: () => []
+    }
   },
   data() {
     return {
@@ -14,7 +19,6 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['messages']),
     selectionLength() {
       return this.selectedMessages.length
     }

@@ -1,9 +1,13 @@
 <script>
 import Inbox from '@/components/Exercise-1/Inbox'
+import { mapGetters } from 'vuex'
 
 export default {
   components: {
     Inbox
+  },
+  computed: {
+    ...mapGetters(['messages'])
   }
 }
 </script>
@@ -61,7 +65,7 @@ export default {
 
     <!-- You may modify any code beneath this line -->
     <div class="exercise-container ma-auto">
-      <Inbox />
+      <Inbox :messages="messages" />
     </div>
   </div>
 </template>
