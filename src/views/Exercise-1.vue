@@ -60,8 +60,14 @@ export default {
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <div class="exercise-container">
+    <div class="exercise-container ma-auto">
       <Inbox />
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.exercise-container {
+  max-width: 1000px;
+}
+</style>
