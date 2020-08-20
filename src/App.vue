@@ -51,8 +51,16 @@ a {
   margin: auto;
 }
 
+.mr-2 {
+  margin-right: 8px;
+}
+
+.user-select-none {
+  user-select: none;
+}
+
 .info-box {
-  border-left: 6px solid grey;
+  border-left: 6px solid #27b1ff;
   display: block;
   max-width: 500px;
   padding: 8px 24px;
