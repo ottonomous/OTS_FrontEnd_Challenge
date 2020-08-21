@@ -24,7 +24,7 @@ for the exercise (these will be clearly denoted in the code) until your
 submission has been graded. Any other code (including router, store,
 styling, and components) are free for you to modify at your discretion.
 
-You can get your project set up with the following steps:
+Continue reading for project setup and submission.
 
 ## Project setup
 
@@ -49,3 +49,7 @@ You can run the automatic linter with this command. Note: all the necessary conf
 ```
 npm run lint
 ```
+
+## Submission
+
+This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown) as a collaborator to your cloned repository on GitHub. Once you've done so, please send an email to [nicholas@prefect.io](nicholas@prefect.io) to confirm your submission.
