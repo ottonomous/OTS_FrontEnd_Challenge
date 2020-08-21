@@ -36,6 +36,20 @@ export default {
   text-align: center;
 }
 
+button {
+  background-color: #76d7c4;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  margin: 3rem auto;
+  padding: 12px;
+  text-transform: uppercase;
+  width: 150px;
+}
+
 textarea {
   color: inherit;
   font-family: inherit;
