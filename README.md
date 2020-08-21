@@ -10,7 +10,18 @@
 
 # Prefect Front End Software Engineer Challenge
 
+Welcome to the Prefect Front End Software Engineer Challenge!
+
+This challenge consists of 3 exercises. Please spend no more
+than 2 hours total on this challenge; the goal is to get a sense for how you
+solve problems and implement your code - the questions are not
+designed to trick you.
+
+You can get your project set up with the following steps:
+
 ## Project setup
+
+To start, install the project dependencies.
 
 ```
 npm install
@@ -18,22 +29,16 @@ npm install
 
 ### Compiles and hot-reloads for development
 
+Then, start your development server.
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
 ### Lints and fixes files
+
+You can run the automatic linter with this command. Note: all the necessary config files are included in the project, which you can use to enable lint on save in your IDE if it isn't already.
 
 ```
 npm run lint
 ```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
