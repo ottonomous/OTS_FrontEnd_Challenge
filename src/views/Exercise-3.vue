@@ -38,7 +38,14 @@ export default {
         <li>rendered that data in the mode of your choosing</li>
       </ul>
 
-      <p> </p>
+      <p>
+        You may use any publicly-available GraphQL API. The
+        <a href="https://github.com/APIs-guru/graphql-apis" target="_blank"
+          >graphql-apis</a
+        >
+        repo on GitHub has a list that you can use; each has a link to "Try it!"
+        that will allow you to test your queries against the live API.
+      </p>
 
       <hr />
     </div>
