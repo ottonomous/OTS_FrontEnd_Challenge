@@ -69,6 +69,10 @@
       li {
         margin: 16px auto;
       }
+
+      .sublist {
+        font-size: 1rem;
+      }
     }
   }
 

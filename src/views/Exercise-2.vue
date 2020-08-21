@@ -37,7 +37,13 @@ export default {}
           </ul>
         </li>
         <li>
-          see their previously saved work when they navigate back to the page
+          see their previously saved work when they navigate to page 1 or page 2
+          <ul class="sublist">
+            <li>
+              if a user chooses not to save their input, the saved input on the
+              next page should reflect their previously saved work
+            </li>
+          </ul>
         </li>
       </ul>
 

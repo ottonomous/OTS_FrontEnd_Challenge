@@ -98,7 +98,7 @@ const state = {
       urgent: false
     }
   ],
-  savedInput: 'Some user input'
+  savedInput: null
 }
 
 const getters = {
@@ -110,7 +110,11 @@ const getters = {
   }
 }
 
-const mutations = {}
+const mutations = {
+  saveInput(state, input) {
+    state.savedInput = input
+  }
+}
 
 const actions = {}
 

@@ -1,5 +1,5 @@
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapMutations } from 'vuex'
 export default {
   data() {
     return {
@@ -11,6 +11,12 @@ export default {
   },
   mounted() {
     this.input = this.savedInput
+  },
+  methods: {
+    ...mapMutations(['saveInput']),
+    save() {
+      this.saveInput(this.input)
+    }
   }
 }
 </script>
@@ -19,6 +25,7 @@ export default {
   <div class="container">
     <h3>Page 1</h3>
     <textarea v-model="input" placeholder="Type something here..." />
+    <button @click="save">Save</button>
   </div>
 </template>
 
