@@ -17,7 +17,7 @@ export default {
     <div>
       <h4>Saved input:</h4>
       <div>
-        {{ savedInput }}
+        {{ savedInput ? savedInput : 'You have no saved input.' }}
       </div>
     </div>
   </div>

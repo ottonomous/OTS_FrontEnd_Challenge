@@ -7,7 +7,10 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['savedInput'])
+    ...mapGetters(['savedInput']),
+    inputMatches() {
+      return this.savedInput == this.input
+    }
   },
   mounted() {
     this.input = this.savedInput
@@ -25,7 +28,7 @@ export default {
   <div class="container">
     <h3>Page 1</h3>
     <textarea v-model="input" placeholder="Type something here..." />
-    <button @click="save">Save</button>
+    <button :disabled="inputMatches" @click="save">Save</button>
   </div>
 </template>
 
@@ -41,13 +44,22 @@ button {
   border: none;
   border-radius: 4px;
   color: #fff;
+  cursor: pointer;
   font-weight: bold;
   font-size: 0.9rem;
   letter-spacing: 4px;
   margin: 3rem auto;
   padding: 12px;
   text-transform: uppercase;
+  transition: all 150ms;
   width: 150px;
+
+  &:disabled,
+  &[disabled] {
+    background-color: #cccccc;
+    color: #666;
+    cursor: default;
+  }
 }
 
 textarea {
