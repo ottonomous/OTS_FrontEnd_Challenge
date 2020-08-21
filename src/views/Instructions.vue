@@ -49,7 +49,8 @@ export default {
         instructions component (found at
         <code>/src/views/Instructions.vue</code>) or any of the instruction text
         for the exercise (these will be clearly denoted in the code) until your
-        submission has been graded.
+        submission has been graded. Any other code (including router, store,
+        styling, and components) are free for you to modify at your discretion.
       </p>
 
       <div class="info-box text-caption ma-auto my-6">
@@ -105,7 +106,7 @@ export default {
 
       <pre>
   <code>
-    <span class="mr-2 user-select-none">$</span>mv public/index-template.html public/index.html && \
+    <span class="mr-1 user-select-none">$</span>mv public/index-template.html public/index.html && \
       rm public/{*.png,*.xml,*.ico,*.svg,*.webmanifest} && \
       mv src/assets/vue-logo.svg src/assets/logo.svg
   </code>

@@ -6,9 +6,12 @@
         Front End Software Engineer Challenge
       </h2>
     </div>
-    <div id="nav">
-      <router-link to="/">Instructions</router-link> |
+    <div class="nav">
+      <router-link to="/" exact>Instructions</router-link>
+      <span class="nav-divider" />
       <router-link to="/exercise-1">Exercise #1</router-link>
+      <span class="nav-divider" />
+      <router-link to="/exercise-2">Exercise #2</router-link>
     </div>
     <transition name="fade" mode="out-in">
       <router-view />
@@ -25,16 +28,24 @@
   padding: 24px 24px 248px 24px;
 }
 
-#nav {
+.nav {
   padding: 30px;
   text-align: center;
 
   a {
     text-decoration: underline;
 
-    &.router-link-exact-active {
+    &.router-link-active {
       color: #2c3e50;
       text-decoration: none;
+    }
+  }
+  .nav-divider {
+    margin: auto 1rem;
+
+    &:before {
+      content: '|';
+      font-size: 1.25rem;
     }
   }
 }
@@ -43,10 +54,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 
   .instructions-container {
-    margin: auto;
+    align-self: start;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1000px;
 
     .instruction-list {
@@ -56,12 +69,18 @@
       li {
         margin: 16px auto;
       }
+
+      .sublist {
+        font-size: 1rem;
+      }
     }
   }
 
   .exercise-container {
+    align-self: start;
     max-width: 1000px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -104,6 +123,10 @@ hr {
 
 .ma-auto {
   margin: auto;
+}
+
+.mr-1 {
+  margin-right: 0.5rem;
 }
 
 .mr-2 {

@@ -97,16 +97,24 @@ const state = {
       timestamp: '8:23 AM',
       urgent: false
     }
-  ]
+  ],
+  savedInput: null
 }
 
 const getters = {
   messages(state) {
     return state.messages
+  },
+  savedInput(state) {
+    return state.savedInput
   }
 }
 
-const mutations = {}
+const mutations = {
+  saveInput(state, input) {
+    state.savedInput = input
+  }
+}
 
 const actions = {}
 

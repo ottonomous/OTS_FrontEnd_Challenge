@@ -15,6 +15,31 @@ const routes = [
     name: 'Exercise 1',
     component: () =>
       import(/* webpackChunkName: "exercise-1" */ '@/views/Exercise-1.vue')
+  },
+  {
+    path: '/exercise-2',
+    name: 'Exercise 2',
+    component: () =>
+      import(/* webpackChunkName: "exercise-2" */ '@/views/Exercise-2.vue'),
+    redirect: { name: 'page-1' },
+    children: [
+      {
+        path: 'page-1',
+        name: 'page-1',
+        component: () =>
+          import(
+            /* webpackChunkName: "exercise-2-page-1" */ '@/components/Exercise-2/Page-1.vue'
+          )
+      },
+      {
+        path: 'page-2',
+        name: 'page-2',
+        component: () =>
+          import(
+            /* webpackChunkName: "exercise-2-page-2" */ '@/components/Exercise-2/Page-2.vue'
+          )
+      }
+    ]
   }
 ]
 
