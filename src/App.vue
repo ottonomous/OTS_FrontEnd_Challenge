@@ -27,6 +27,7 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 24px 24px 248px 24px;
 }
 
 .nav {
@@ -61,8 +62,7 @@
     align-self: start;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
-    min-width: 500px;
+    max-width: 1000px;
 
     .instruction-list {
       font-size: 1.25rem;
@@ -80,8 +80,7 @@
 
   .exercise-container {
     align-self: start;
-    max-width: 50%;
-    min-width: 500px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
   }

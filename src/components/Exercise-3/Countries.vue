@@ -50,7 +50,7 @@ export default {
 
 <template>
   <div class="container">
-    <div>Countries</div>
+    <h3 class="title">Countries</h3>
     <div class="grid-container">
       <template v-if="loading">
         <LoadingCard class="card" />
@@ -78,10 +78,14 @@ export default {
   width: 100%;
 
   .card {
-    height: 200px;
+    height: 150px;
     justify-self: center;
     margin: 24px;
     width: 200px;
   }
+}
+
+.title {
+  text-align: center;
 }
 </style>

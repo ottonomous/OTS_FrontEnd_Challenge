@@ -17,9 +17,10 @@ export default {
         Exercise 3
       </h2>
       <p>
-        For this exercise, you'll query a GraphQL API of your choice using the
-        following component and decide how to render the data you get back. A
-        sample query has been provided for you
+        For this exercise, you'll create a component (or components) that query
+        a GraphQL API of your choice and render the data you get back. The
+        <code>Countries</code> component below has been provided as a brief
+        example.
       </p>
 
       <div class="info-box text-caption ma-auto">
@@ -42,7 +43,7 @@ export default {
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <div class="exercise-container">
+    <div class="exercise-container exercise-3">
       <Countries />
     </div>
   </div>
@@ -50,6 +51,6 @@ export default {
 
 <style lang="scss" scoped>
 .exercise-3 {
-  min-height: 700px;
+  min-width: 500px;
 }
 </style>

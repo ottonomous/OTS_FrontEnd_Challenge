@@ -78,6 +78,7 @@ export default {}
     0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
   min-height: 700px;
   padding: 12px 24px;
+  width: 500px;
 }
 
 a {
