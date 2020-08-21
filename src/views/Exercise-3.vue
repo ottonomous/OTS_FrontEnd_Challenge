@@ -12,7 +12,8 @@ export default {}
       </h2>
       <p>
         For this exercise, you'll query a GraphQL API of your choice using the
-        following component and decide how to render the data you get back.
+        following component and decide how to render the data you get back. A
+        sample query has been provided for you
       </p>
 
       <div class="info-box text-caption ma-auto">
