@@ -30,8 +30,8 @@ Continue reading for project setup and submission.
 
 - Clone this repository
 - Change the remote to a private GitHub repository under your username
-- Push code to that remote
-- Develop
+- Push code to that remote, using clear Commits and Pull Requests with clear messages
+- Code!
 
 ## Submission
 
