@@ -77,7 +77,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-height: 100vh;
+  max-height: calc(100vh - 300px);
   overflow: scroll;
   width: 100%;
 
