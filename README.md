@@ -12,8 +12,8 @@
 
 Welcome to the Prefect Front End Software Engineer Challenge!
 
-This challenge consists of 3 exercises. Please spend no more
-than 2 hours total on this challenge; the goal is to get a sense for how you
+This challenge consists of 3 exercises. Do your best to complete all 3, but please spend no more
+than 3 hours total on this challenge; the goal is to get a sense for how you
 solve problems and implement your code - the questions are not
 designed to trick you.
 
@@ -27,6 +27,17 @@ styling, and components) are free for you to modify at your discretion.
 Continue reading for project setup and submission.
 
 ## Project setup
+
+- Clone this repository
+- Change the remote to a private GitHub repository under your username
+- Push code to that remote
+- Develop
+
+## Submission
+
+This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown) as a collaborator to your cloned repository on GitHub. Once you've done so, please send an email to [nicholas@prefect.io](nicholas@prefect.io) to confirm your submission.
+
+## Local Development
 
 To start, install the project dependencies.
 
@@ -49,7 +60,3 @@ You can run the automatic linter with this command. Note: all the necessary conf
 ```
 npm run lint
 ```
-
-## Submission
-
-This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown) as a collaborator to your cloned repository on GitHub. Once you've done so, please send an email to [nicholas@prefect.io](nicholas@prefect.io) to confirm your submission.
