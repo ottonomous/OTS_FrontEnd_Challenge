@@ -17,6 +17,13 @@ than 2 hours total on this challenge; the goal is to get a sense for how you
 solve problems and implement your code - the questions are not
 designed to trick you.
 
+No additional packages or libraries are required to complete this
+challenge but you may add any that you wish. Please do not modify this
+instructions component (found at `/src/views/Instructions.vue`) or any of the instruction text
+for the exercise (these will be clearly denoted in the code) until your
+submission has been graded. Any other code (including router, store,
+styling, and components) are free for you to modify at your discretion.
+
 You can get your project set up with the following steps:
 
 ## Project setup
