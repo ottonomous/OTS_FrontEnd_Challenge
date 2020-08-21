@@ -38,6 +38,8 @@ export default {
         <li>rendered that data in the mode of your choosing</li>
       </ul>
 
+      <p> </p>
+
       <hr />
     </div>
     <!-- Please do not modify the code between these comments! -->
@@ -52,6 +54,6 @@ export default {
 <style lang="scss" scoped>
 .exercise-3 {
   min-width: 500px;
-  width: 100%;
+  width: 750px;
 }
 </style>

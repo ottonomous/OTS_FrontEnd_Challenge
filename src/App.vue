@@ -2,7 +2,7 @@
   <div id="app">
     <div class="text-center">
       <img alt="Prefect logo" class="logo" src="./assets/logo.svg" />
-      <h2>
+      <h2 class="text-h2">
         Front End Software Engineer Challenge
       </h2>
     </div>
@@ -15,6 +15,7 @@
       <span class="nav-divider" />
       <router-link to="/exercise-3">Exercise #3</router-link>
     </div>
+
     <transition name="fade" mode="out-in">
       <router-view />
     </transition>
@@ -27,11 +28,12 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 24px 24px 248px 24px;
+  padding: 8px 24px 248px 24px;
 }
 
 .nav {
-  padding: 30px;
+  margin-bottom: 24px;
+  padding: 4px;
   text-align: center;
 
   a {
@@ -84,6 +86,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.text-h2 {
+  margin: 0;
 }
 
 code {

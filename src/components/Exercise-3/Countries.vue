@@ -67,17 +67,25 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .grid-container {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-height: 100vh;
+  overflow: scroll;
   width: 100%;
 
   .card {
     height: 150px;
     justify-self: center;
     margin: 24px;
+    text-align: left;
     width: 300px;
   }
 }
