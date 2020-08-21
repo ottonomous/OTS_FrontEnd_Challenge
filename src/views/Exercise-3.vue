@@ -47,6 +47,12 @@ export default {
         that will allow you to test your queries against the live API.
       </p>
 
+      <p>
+        When you've chosen your API, you'll need to get the GraphQL endpoint;
+        you'll replace the <code>httpEndpoint</code> variable in
+        <code>/src/vue-apollo.js</code> with your endpoint.
+      </p>
+
       <hr />
     </div>
     <!-- Please do not modify the code between these comments! -->
