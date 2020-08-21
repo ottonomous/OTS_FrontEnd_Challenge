@@ -40,6 +40,12 @@ const routes = [
           )
       }
     ]
+  },
+  {
+    path: '/exercise-3',
+    name: 'Exercise 3',
+    component: () =>
+      import(/* webpackChunkName: "exercise-3" */ '@/views/Exercise-3.vue')
   }
 ]
 

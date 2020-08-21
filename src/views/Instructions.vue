@@ -68,7 +68,7 @@ export default {
         <a href="https://github.com/znicholasbrown" target="_blank"
           >@znicholasbrown</a
         >
-        as a collaborator to your forked repository on GitHub. Once you've done
+        as a collaborator to your cloned repository on GitHub. Once you've done
         so, please send an email to
         <a href="mailto:nicholas@prefect.io" target="_blank"
           >nicholas@prefect.io</a
@@ -114,8 +114,8 @@ export default {
 
       <hr />
 
-      <h3>
-        Resources
+      <h3 style="text-align: center;">
+        Additional Resources
       </h3>
       <HelpfulLinks />
     </div>
