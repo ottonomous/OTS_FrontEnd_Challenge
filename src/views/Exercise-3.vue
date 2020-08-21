@@ -52,5 +52,6 @@ export default {
 <style lang="scss" scoped>
 .exercise-3 {
   min-width: 500px;
+  width: 100%;
 }
 </style>

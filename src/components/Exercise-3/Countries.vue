@@ -51,20 +51,17 @@ export default {
 <template>
   <div class="container">
     <h3 class="title">Countries List (Example)</h3>
-    <div class="grid-container">
-      <template v-if="loading">
-        <LoadingCard class="card" />
-        <LoadingCard class="card" />
-        <LoadingCard class="card" />
-      </template>
-      <template v-else>
-        <CountryCard
-          v-for="country in countries"
-          :key="country.id"
-          :country="country"
-          class="card"
-        />
-      </template>
+    <div v-if="loading" class="grid-container">
+      <LoadingCard v-for="i in 6" :key="i" class="card" />
+    </div>
+
+    <div v-else class="grid-container">
+      <CountryCard
+        v-for="(country, i) in countries"
+        :key="i"
+        :country="country"
+        class="card"
+      />
     </div>
   </div>
 </template>
@@ -81,7 +78,7 @@ export default {
     height: 150px;
     justify-self: center;
     margin: 24px;
-    width: 200px;
+    width: 300px;
   }
 }
 

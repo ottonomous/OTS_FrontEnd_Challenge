@@ -62,7 +62,7 @@
     align-self: start;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 750px;
 
     .instruction-list {
       font-size: 1.25rem;

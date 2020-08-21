@@ -22,7 +22,7 @@ export default {
       </div>
 
       <h6>Languages</h6>
-      <span v-for="language in country.languages" :key="language" class="chip">
+      <span v-for="(language, i) in country.languages" :key="i" class="chip">
         {{ language.name }}
       </span>
     </div>
