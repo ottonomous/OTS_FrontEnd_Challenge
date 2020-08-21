@@ -1,5 +1,11 @@
 <script>
-export default {}
+import YourComponent from '@/components/Exercise-3/YourComponent'
+
+export default {
+  components: {
+    YourComponent
+  }
+}
 </script>
 
 <template>
@@ -24,30 +30,7 @@ export default {}
 
       <ul class="instruction-list ma-auto my-6">
         <strong>A user can...</strong>
-        <li>
-          see a dialog box reminding them to save their work before they
-          navigate away from the page
-          <ul class="sublist">
-            <li>
-              the dialog should contain both a button that will allow the user
-              to save their work and a button that will allow the user to
-              discard their changes
-            </li>
-            <li>
-              no matter the choice a user makes, they should be navigated to the
-              next page
-            </li>
-          </ul>
-        </li>
-        <li>
-          see their previously saved work when they navigate to page 1 or page 2
-          <ul class="sublist">
-            <li>
-              if a user chooses not to save their input, the saved input on the
-              next page should reflect their previously saved work
-            </li>
-          </ul>
-        </li>
+        <li> </li>
       </ul>
 
       <p class="my-6">
@@ -59,29 +42,18 @@ export default {}
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <div class="exercise-container exercise-2" style="">
-      <div class="nav">
-        <router-link :to="{ name: 'page-1' }">page 1</router-link>
-        <span class="nav-divider" />
-        <router-link :to="{ name: 'page-2' }">page 2</router-link>
-      </div>
-
-      <transition name="fade" mode="out-in">
-        <router-view />
-      </transition>
+    <div class="exercise-container exercise-3">
+      <YourComponent />
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.exercise-2 {
+.exercise-3 {
   background-color: white;
   border-radius: 4px;
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
     0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
-  min-width: 700px;
-  min-height: 700px;
-  padding: 12px 24px;
 }
 
 a {

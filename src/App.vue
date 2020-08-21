@@ -12,6 +12,8 @@
       <router-link to="/exercise-1">Exercise #1</router-link>
       <span class="nav-divider" />
       <router-link to="/exercise-2">Exercise #2</router-link>
+      <span class="nav-divider" />
+      <router-link to="/exercise-3">Exercise #3</router-link>
     </div>
     <transition name="fade" mode="out-in">
       <router-view />
@@ -60,7 +62,7 @@
     align-self: start;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 50%;
 
     .instruction-list {
       font-size: 1.25rem;
@@ -78,7 +80,7 @@
 
   .exercise-container {
     align-self: start;
-    max-width: 1000px;
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
