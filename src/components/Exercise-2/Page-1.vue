@@ -58,6 +58,7 @@ textarea {
   min-height: 200px;
   outline-color: #76d7c4;
   overflow: auto;
+  padding: 24px;
   resize: none;
   width: 85%;
 }
