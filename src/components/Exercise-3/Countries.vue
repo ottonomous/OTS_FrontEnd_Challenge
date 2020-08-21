@@ -1,10 +1,12 @@
 <script>
 import gql from 'graphql-tag'
 import CountryCard from '@/components/Exercise-3/CountryCard'
+import LoadingCard from '@/components/Exercise-3/LoadingCard'
 
 export default {
   components: {
-    CountryCard
+    CountryCard,
+    LoadingCard
   },
   data() {
     return {
@@ -48,20 +50,38 @@ export default {
 
 <template>
   <div class="container">
-    <div v-if="loading">Loading...</div>
-    <div v-else>
-      <CountryCard
-        v-for="country in countries"
-        :key="country.id"
-        :country="country"
-      />
+    <div>Countries</div>
+    <div class="grid-container">
+      <template v-if="loading">
+        <LoadingCard class="card" />
+        <LoadingCard class="card" />
+        <LoadingCard class="card" />
+      </template>
+      <template v-else>
+        <CountryCard
+          v-for="country in countries"
+          :key="country.id"
+          :country="country"
+          class="card"
+        />
+      </template>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.container {
-  padding: 12px 24px;
-  width: 700px;
+.grid-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  .card {
+    height: 200px;
+    justify-self: center;
+    margin: 24px;
+    width: 200px;
+  }
 }
 </style>
