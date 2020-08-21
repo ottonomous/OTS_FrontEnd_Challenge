@@ -23,7 +23,7 @@ export default {}
         <strong>A user can...</strong>
         <li>
           see a dialog box reminding them to save their work before they
-          navigate away from the page
+          navigate away from the in-app page
           <ul class="sublist">
             <li>
               the dialog should contain both a button that will allow the user
@@ -50,6 +50,13 @@ export default {}
       <p class="my-6">
         Modify the components as you see fit to accomplish the above stories.
       </p>
+
+      <div class="info-box text-caption ma-auto">
+        <em>Tip:</em> The "pages" in question are those within the window to the
+        right (or below, depending on screen size); you don't need to implement
+        persistent storage for browser-level navigation (so no need to use
+        <code>localStorage</code> for anything).
+      </div>
 
       <hr />
     </div>
