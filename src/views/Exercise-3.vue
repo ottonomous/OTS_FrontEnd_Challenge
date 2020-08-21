@@ -1,9 +1,9 @@
 <script>
-import YourComponent from '@/components/Exercise-3/YourComponent'
+import CountriesComponent from '@/components/Exercise-3/CountriesComponent'
 
 export default {
   components: {
-    YourComponent
+    CountriesComponent
   }
 }
 </script>
@@ -43,7 +43,7 @@ export default {
 
     <!-- You may modify any code beneath this line -->
     <div class="exercise-container exercise-3">
-      <YourComponent />
+      <CountriesComponent />
     </div>
   </div>
 </template>
