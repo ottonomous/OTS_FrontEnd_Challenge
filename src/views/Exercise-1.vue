@@ -24,13 +24,14 @@ export default {
         You're building an application that has an inbox to display email-like
         messages between users. Someone else on your team has scaffolded the
         feature but you've been asked to extend the component to resolve the
-        following user and developer stories.
+        following user and developer stories, which are stories written from the
+        perspective of someone on your team that might pick up the work later.
       </p>
 
       <div class="info-box text-caption ma-auto">
-        <em>Tip:</em> There are many ways to achieve these user stories. You
-        should read through the source component to get an understanding of how
-        it works.
+        <em>Tip:</em> There are many ways to achieve these stories. You should
+        read through the source component to get an understanding of how it
+        works.
       </div>
 
       <ul class="instruction-list ma-auto my-6">
