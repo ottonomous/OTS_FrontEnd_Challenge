@@ -50,7 +50,7 @@ export default {
 
 <template>
   <div class="container">
-    <h3 class="title">Countries</h3>
+    <h3 class="title">Countries List (Example)</h3>
     <div class="grid-container">
       <template v-if="loading">
         <LoadingCard class="card" />

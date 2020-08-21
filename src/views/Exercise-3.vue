@@ -30,13 +30,13 @@ export default {
       </div>
 
       <ul class="instruction-list ma-auto my-6">
-        <strong>A user can...</strong>
-        <li> </li>
+        <strong>To complete this exercise, ensure that you have...</strong>
+        <li>
+          replaced the <code>Countries</code> component with your own component
+        </li>
+        <li>pulled some data from one of the provided GraphQL APIs</li>
+        <li>rendered that data in the mode of your choosing</li>
       </ul>
-
-      <p class="my-6">
-        Modify the components as you see fit to accomplish the above stories.
-      </p>
 
       <hr />
     </div>
