@@ -114,8 +114,8 @@ export default {
 
       <hr />
 
-      <h3>
-        Resources
+      <h3 style="text-align: center;">
+        Additional Resources
       </h3>
       <HelpfulLinks />
     </div>
