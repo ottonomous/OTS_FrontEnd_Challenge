@@ -28,7 +28,7 @@ export default {
   <div class="container">
     <h3>Page 1</h3>
     <textarea v-model="input" placeholder="Type something here..." />
-    <button :disabled="inputMatches" @click="save">Save</button>
+    <button class="ripple" :disabled="inputMatches" @click="save">Save</button>
   </div>
 </template>
 
@@ -73,5 +73,22 @@ textarea {
   padding: 24px;
   resize: none;
   width: 85%;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 800ms;
+
+  &:hover {
+    background: #76d7c4
+      radial-gradient(circle, transparent 1%, rgba(133, 146, 158, 0.05) 1%)
+      center/15000%;
+  }
+
+  &:active {
+    background-color: #76d7c4;
+    background-size: 100%;
+    transition: background 0s;
+  }
 }
 </style>
