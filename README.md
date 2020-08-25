@@ -13,14 +13,13 @@
 Welcome to the Prefect Front End Software Engineer Challenge!
 
 This challenge consists of 3 exercises. Do your best to complete all 3, but please spend no more
-than 3 hours total on this challenge; the goal is to get a sense for how you
+than 3 hours total on these; the goal is to get a sense for how you
 solve problems and implement your code - the questions are not
 designed to trick you.
 
-No additional packages or libraries are required to complete this
-challenge but you may add any that you wish. Please do not modify this
+No additional packages or libraries are required but you may add any that you wish. Please do not modify the
 instructions component (found at `/src/views/Instructions.vue`) or any of the instruction text
-for the exercise (these will be clearly denoted in the code) until your
+for the exercise (these will be clearly denoted in the code with an `.instructions` class) until your
 submission has been graded. Any other code (including router, store,
 styling, and components) are free for you to modify at your discretion.
 
