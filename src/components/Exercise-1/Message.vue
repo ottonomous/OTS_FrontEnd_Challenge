@@ -30,6 +30,9 @@ export default {
     }
   },
   methods: {
+    deleteMessage() {
+      
+    },
     toggleActive() {
       if (this.isActive) {
         this.$emit('unselect', this.message)
@@ -44,8 +47,8 @@ export default {
 </script>
 
 <template>
-  <div @click.prevent="toggleActive" :class="`message ripple ${urgentClass}`" @mouseover="isHovering = true" @mouseleave="isHovering = false" >
-    <div class="message-top-row"> 
+  <div  :class="`message ripple ${urgentClass}`" @mouseover="isHovering = true" @mouseleave="isHovering = false" >
+    <div @click="toggleActive" class="message-top-row"> 
       <div class="action">
         <i class="far fa-lg" :class="iconClass" />
       </div>
@@ -53,8 +56,12 @@ export default {
         <div class="from" :class="fromClass">{{ `${message.from} ${isUrgentMessage ? '- (Urgent)' : ''}` }}</div>
         <div class="subject">{{ message.subject }}</div>
       </div>
-      <div class="timestamp">
+      <div v-if="!isHovering" class="timestamp">
         {{ message.timestamp }}
+      </div>
+      <div v-else  class="delete-button">
+        <!-- added .stop.prevent to ensure only child click event is fired -->
+       <i class="fa fa-trash" @click.stop.prevent="deleteMessage" aria-hidden="true"/>
       </div>
     </div>
     <!-- preview message div: will render when mouse is hovering over message component -->
@@ -108,11 +115,18 @@ export default {
       font-size: 0.75rem;
       margin-left: auto;
     }
+
+    .delete-button {
+      font-size: 1rem;
+      color: rgba(248, 99, 99, 0.904);
+      margin-left: auto;
+      z-index: 1000;
+    }
   }
 
   .message-bottom-row {
     color: black;
-    margin: 0px 24px 12px;
+    margin: 0px 24px 8px;
     padding: 5px;
 
     .message-container {
