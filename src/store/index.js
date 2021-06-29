@@ -113,6 +113,9 @@ const getters = {
 const mutations = {
   saveInput(state, input) {
     state.savedInput = input
+  },
+  deleteMessage(state, input) {
+    state.messages = state.messages.filter(m => m.id !== input)
   }
 }
 

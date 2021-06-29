@@ -1,4 +1,6 @@
 <script>
+import { mapMutations }  from 'vuex'
+
 export default {
   props: {
     message: {
@@ -30,9 +32,7 @@ export default {
     }
   },
   methods: {
-    deleteMessage() {
-      
-    },
+    ...mapMutations(['deleteMessage']),
     toggleActive() {
       if (this.isActive) {
         this.$emit('unselect', this.message)
@@ -61,7 +61,7 @@ export default {
       </div>
       <div v-else  class="delete-button">
         <!-- added .stop.prevent to ensure only child click event is fired -->
-       <i class="fa fa-trash" @click.stop.prevent="deleteMessage" aria-hidden="true"/>
+       <i class="fa fa-trash" @click.stop.prevent="deleteMessage(message.id)" aria-hidden="true"/>
       </div>
     </div>
     <!-- preview message div: will render when mouse is hovering over message component -->
