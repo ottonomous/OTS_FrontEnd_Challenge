@@ -19,10 +19,12 @@ export default {
       return this.isActive ? 'fa-check-square' : 'fa-square'
     },
     isUrgentMessage () {
-       const { urgent } = this.message
+      // quick computed property to mitigate long variable names in template
+      const { urgent } = this.message
       return urgent 
     },
     urgentClass() {
+      // We return a class here to indicate whether the message should be highlighted or not
       return this.isUrgentMessage ? 'urgent' : ''
     }
   },
