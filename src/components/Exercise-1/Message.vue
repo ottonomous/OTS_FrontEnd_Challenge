@@ -83,6 +83,7 @@ export default {
   cursor: pointer;
   display: flex;  
   flex-direction: column;
+  max-width: 555px;
   
   .message-top-row {
     cursor: pointer;
