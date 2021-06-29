@@ -29,7 +29,11 @@ export default {
     urgentClass() {
       // We return a class here to indicate whether the message should be highlighted or not
       return this.isUrgentMessage ? 'urgent' : ''
+    },
+    selectedClass() {
+      return this.isActive ? 'selected' : ''
     }
+
   },
   methods: {
     ...mapMutations(['deleteMessage']),
@@ -47,8 +51,8 @@ export default {
 </script>
 
 <template>
-  <div  :class="`message ripple ${urgentClass}`" @mouseover="isHovering = true" @mouseleave="isHovering = false" >
-    <div @click="toggleActive" class="message-top-row"> 
+  <div @click="toggleActive" :class="`message ripple ${urgentClass} ${selectedClass}`" @mouseover="isHovering = true" @mouseleave="isHovering = false" >
+    <div  class="message-top-row"> 
       <div class="action">
         <i class="far fa-lg" :class="iconClass" />
       </div>
@@ -91,6 +95,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px 0px ;
+
     .action {
       margin: 24px 24px 24px 0;
     }
@@ -165,5 +170,11 @@ export default {
 
 .urgent {
   background-color: rgb(250, 216, 171);
+}
+
+.selected {
+  // left blank for now 
+  // Dev can change the active color of selected messages here: 
+    background-color: transparent
 }
 </style>
