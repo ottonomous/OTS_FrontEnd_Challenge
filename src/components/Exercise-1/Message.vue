@@ -8,7 +8,7 @@ export default {
   },
   data() {
     return {
-      isActive: false
+      isActive: false,
     }
   },
   computed: {
@@ -17,6 +17,13 @@ export default {
     },
     iconClass() {
       return this.isActive ? 'fa-check-square' : 'fa-square'
+    },
+    isUrgentMessage () {
+       const { urgent } = this.message
+      return urgent 
+    },
+    urgentClass() {
+      return this.isUrgentMessage ? 'urgent' : ''
     }
   },
   methods: {
@@ -34,13 +41,13 @@ export default {
 </script>
 
 <template>
-  <div @click.prevent="toggleActive" class="message ripple">
+  <div @click.prevent="toggleActive" :class="`message ripple ${urgentClass}`" @mouseover="hover = true" @mouseleave="hover = false">
     <div class="action">
       <i class="far fa-lg" :class="iconClass" />
     </div>
     <div>
-      <div class="from" :class="fromClass">{{ message.from }}</div>
-      <div class="subject">{{ message.subject }}</div>
+      <div class="from" :class="fromClass">{{ `${message.from} ${isUrgentMessage ? '- (Urgent)' : ''}` }}</div>
+      <div class="subject">{{ message.subject }}  </div>
     </div>
     <div class="timestamp">
       {{ message.timestamp }}
@@ -98,5 +105,9 @@ export default {
     background-size: 100%;
     transition: background 0s;
   }
+}
+
+.urgent {
+  background-color: rgb(250, 216, 171)
 }
 </style>
