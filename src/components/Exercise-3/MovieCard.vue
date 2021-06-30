@@ -79,7 +79,7 @@ img {
     background-color: rgba(133, 167, 168, 0.158);
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: auto;
     justify-self: center;
     margin: 20px;
     text-align: left;
