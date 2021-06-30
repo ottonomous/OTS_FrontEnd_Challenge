@@ -16,6 +16,7 @@ export default {
   },
   // add beforeRouteLeave navigation guard to avoid unsaved changes accidentally being lost
   beforeRouteLeave (to, from , next) {
+    // pass next function to 'this' so it can be called from other methods
     this.next = next
     if(!this.inputMatches) {
       this.showNavWarningDialog = true
@@ -155,6 +156,7 @@ button {
   }
 }
 
+// add custom styling to button components with save or cancel classes
 button.save {
     background-color: rgb(71, 155, 71)
   }
