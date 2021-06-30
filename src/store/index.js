@@ -113,6 +113,10 @@ const getters = {
 const mutations = {
   saveInput(state, input) {
     state.savedInput = input
+  },
+  // mutation to delete messages when trash icon clicked in message component
+  deleteMessage(state, input) {
+    state.messages = state.messages.filter(m => m.id !== input)
   }
 }
 
