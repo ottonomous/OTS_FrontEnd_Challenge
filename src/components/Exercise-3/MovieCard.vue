@@ -1,11 +1,14 @@
 <template>
   <div class="movie-card">
+    <!-- ranking div! -->
     <div class="movie-ranking">
       {{`${ranking}.`}}
     </div>
+    <!-- Poster image! -->
     <div class="movie-poster"> 
       <img :src="movie.poster"/>
     </div>
+    <!-- details div! -->
     <div class="movie-details">
       <b>Title: </b>{{movie.title}} <br/>
       <b>Release Date: </b> {{movie.year}} <br/>

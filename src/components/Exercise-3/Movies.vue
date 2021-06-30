@@ -2,6 +2,7 @@
   <div class="container">
     <h3 class="title">Top 50 Movies on ImDB (With Posters)</h3>
     <div class="movie-container"> 
+      <!-- Movie Card component here, we pass the movie and the index so we can calculate ranking! -->
       <MovieCard
         v-for="(movie, index) in movies"
         :key="movie.id"
@@ -46,6 +47,8 @@ export default {
         }
       `,
       update(data) {
+        // We add a update hook here otherwise apollo will throw an error
+        // This is because the property name of the data returned does not match the name we have on line 34 "movies".
         return data.Movie
       }
     }    
