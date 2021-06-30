@@ -21,6 +21,12 @@ export default {
   computed: {
     selectionLength() {
       return this.selectedMessages.length
+    },
+    titleText() {
+      // Dev can change title here
+      const numberOfSelectedMessages = this.selectedMessages.length
+      if(numberOfSelectedMessages > 0) return `${numberOfSelectedMessages} message${ numberOfSelectedMessages == 1 ? '' : 's'}`
+      else return "Inbox"
     }
   },
   methods: {
@@ -42,14 +48,9 @@ export default {
 <template>
   <div class="inbox">
     <div class="title">
+      <!-- TODO: Dev Can Add User Avatar Here -->
       <div class="text-h2 white">
-        {{
-          selectionLength > 0
-            ? `${selectionLength} message${
-                selectionLength == 1 ? '' : 's'
-              } selected`
-            : 'Inbox'
-        }}
+        {{ titleText }}
       </div>
       <div>
         <i class="fas fa-search fa-lg mr-6 white" />
@@ -77,6 +78,7 @@ export default {
     0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
 
   .title {
+    // TODO: Dev can change styling here for the title bar
     align-items: center;
     background-color: #76d7c4;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
