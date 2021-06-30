@@ -1,9 +1,9 @@
 <script>
-import Countries from '@/components/Exercise-3/Countries'
+import Movies from '@/components/Exercise-3/Movies'
 
 export default {
   components: {
-    Countries
+    Movies
   }
 }
 </script>
@@ -59,7 +59,7 @@ export default {
 
     <!-- You may modify any code beneath this line -->
     <div class="exercise-container exercise-3">
-      <Countries />
+      <Movies />
     </div>
   </div>
 </template>

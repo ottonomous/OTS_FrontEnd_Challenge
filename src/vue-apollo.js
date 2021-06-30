@@ -5,7 +5,7 @@ import { ApolloClient } from 'apollo-client'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 
 // This is the string you can modify with the endpoint of your choosing.
-const httpEndpoint = 'https://countries.trevorblades.com/'
+const httpEndpoint = 'https://movies.grandstack.io/'
 
 // Install the vue plugin
 Vue.use(VueApollo)
