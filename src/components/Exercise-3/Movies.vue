@@ -69,6 +69,7 @@ export default {
   width: 100%;
   border: 1px solid rgba(128, 128, 128, 0.336);
   border-radius: 25px;
+  padding: 30px, 15px 30px 15px;
 }
 
 .title {
