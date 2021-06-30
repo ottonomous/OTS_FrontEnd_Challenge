@@ -1,7 +1,14 @@
 <template>
   <div class="container">
-    <h3 class="title">Top 50 Movies on ImDB </h3>
+    <h3 class="title">Top 50 Movies on ImDB (With Posters)</h3>
     <div class="movie-container"> 
+      <MovieCard
+        v-for="(movie, index) in movies"
+        :key="movie.id"
+        :ranking="index + 1"
+        :movie="movie"
+        class="movie-card"
+      />
     </div>
   </div>
 </template>
@@ -9,23 +16,25 @@
 
 <script>
 import gql from 'graphql-tag'
+import MovieCard from './MovieCard.vue'
 
 export default {
-  name: 'Movies',
-  // components: {
-
-  // },
+  name: 'movies',
+  components: {
+    MovieCard
+  },
   data() {
     return {
+      movies: []
     }
   },
   computed: {
   },
   apollo: {
-    Movies: {
+    movies: {
       query: gql`
         query {
-          Movie (first:50, orderBy: imdbRating_desc, filter:{imdbRating_not: null}){
+          Movie (first:50, orderBy: imdbRating_desc, filter:{imdbRating_not: null, poster_not: null}){
             title
             year
             poster
@@ -48,6 +57,18 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
+}
+
+.movie-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  max-height: calc(100vh - 300px);
+  overflow: scroll;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.336);
+  border-radius: 25px;
 }
 
 .title {
