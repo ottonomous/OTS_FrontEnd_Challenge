@@ -4,7 +4,8 @@ export default {
   data() {
     return {
       input: null,
-      showNavWarningDialog: false
+      showNavWarningDialog: false,
+      next:null
     }
   },
   computed: {
@@ -13,7 +14,9 @@ export default {
       return this.savedInput == this.input
     }
   },
+  // add beforeRouteLeave navigation guard to avoid unsaved changes accidentally being lost
   beforeRouteLeave (to, from , next) {
+    this.next = next
     if(!this.inputMatches) {
       this.showNavWarningDialog = true
     }
@@ -26,7 +29,15 @@ export default {
     ...mapMutations(['saveInput']),
     save() {
       this.saveInput(this.input)
-    }
+    },
+    saveAndNavigate() {
+      this.saveInput(this.input)
+      this.next()
+    },
+    async navigateToPage() {
+      this.next()
+    },
+
   }
 }
 </script>
@@ -47,7 +58,8 @@ export default {
         </div>
 
         <div class="dialog-footer">
-          buttons go here
+          <button class="footer-button save" @click="saveAndNavigate"> Save </button>
+          <button class="footer-button cancel" @click="navigateToPage"> Cancel </button>
         </div>
       </div>
     </div>
@@ -80,7 +92,7 @@ export default {
   .dialog-container{
     z-index: 10000;
     background-color: white;
-    border: 5px solid #f3d138;
+    border: 5px solid #ffb74d;
     margin: auto;
     left: 0;
     right: 0;
@@ -93,9 +105,8 @@ export default {
       margin-bottom: 10px;
       font-size: 1.2rem;
       font-weight: bold;
-      color: #f3d138;
+      color: #ffb74d;
       text-align: center;
-      border-bottom: 2px solid #f3d138;
     } 
 
     .dialog-body{
@@ -111,6 +122,11 @@ export default {
       display: flex;
       direction: row;
       justify-content: space-between;
+
+      .footer-button{
+        width: 120px;
+        margin: 10px 10px 10px 10px;
+      }
     }
 
   }
@@ -138,6 +154,14 @@ button {
     cursor: default;
   }
 }
+
+button.save {
+    background-color: rgb(71, 155, 71)
+  }
+
+button.cancel {
+    background-color: rgb(194, 63, 63)
+  }
 
 textarea {
   color: inherit;
