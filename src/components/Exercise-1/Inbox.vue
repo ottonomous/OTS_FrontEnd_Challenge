@@ -1,5 +1,6 @@
 <script>
 import Message from '@/components/Exercise-1/Message'
+import { mapMutations }  from 'vuex'
 
 export default {
   components: {
@@ -27,9 +28,19 @@ export default {
       const numberOfSelectedMessages = this.selectedMessages.length
       if(numberOfSelectedMessages > 0) return `${numberOfSelectedMessages} message${ numberOfSelectedMessages == 1 ? '' : 's'}`
       else return "Inbox"
+    },
+    anySelected() {
+      return !!this.selectedMessages.length
     }
   },
   methods: {
+    ...mapMutations(['deleteMessages']),
+    deleteSelectedMessages() {
+      if(!this.selectedMessages.length) return 
+      const messageIds = this.selectedMessages.map(item => item.id)
+      this.deleteMessages(messageIds)
+      this.selectedMessages = []
+    },
     toggleSelection(selection) {
       const index = this.selectedMessages.findIndex(
         message => message.id == selection.id
@@ -52,9 +63,10 @@ export default {
       <div class="text-h2 white">
         {{ titleText }}
       </div>
-      <div>
-        <i class="fas fa-search fa-lg mr-6 white" />
-        <i class="fas fa-ellipsis-v fa-lg white" />
+      <div class="action-container">
+        <i v-if="!anySelected" class="fas fa-search fa-lg white" />
+        <i v-else class="fa fa-trash fa-lg white delete-btn" @click="deleteSelectedMessages" aria-hidden="true"/>
+        <i v-if="!anySelected" class="fas fa-ellipsis-v fa-lg white" />
       </div>
     </div>
 
@@ -87,6 +99,18 @@ export default {
     height: 64px;
     justify-content: space-between;
     padding: 12px 24px;
+    .action-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 20%;
+      i {
+        margin-left: 15px;
+      }
+      .delete-btn {
+        cursor: pointer;
+      }
+    }
   }
 }
 

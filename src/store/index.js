@@ -117,6 +117,10 @@ const mutations = {
   // mutation to delete messages when trash icon clicked in message component
   deleteMessage(state, input) {
     state.messages = state.messages.filter(m => m.id !== input)
+  },
+
+  deleteMessages(state, input) {
+    state.messages = state.messages.filter(m => !input.includes(m.id))
   }
 }
 

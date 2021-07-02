@@ -77,13 +77,12 @@ export default {
       </div>
     </div>
     <!-- preview message div: will render when mouse is hovering over message component -->
-    <div v-if="isHovering" class="message-bottom-row">
+    <div v-if="isActive" class="message-bottom-row">
       <div class="message-container">
         <div class="message-body"> 
         {{message.message}}
         </div>
       </div>
-      
     </div>
     
   </div>

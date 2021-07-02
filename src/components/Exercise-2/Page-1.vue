@@ -35,10 +35,9 @@ export default {
       this.saveInput(this.input)
       this.next()
     },
-    async navigateToPage() {
+    navigateToPage() {
       this.next()
-    },
-
+    }
   }
 }
 </script>
