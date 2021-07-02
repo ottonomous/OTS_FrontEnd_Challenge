@@ -45,8 +45,16 @@ export default {
       }
 
       this.isActive = !this.isActive
+    },
+    deleteAndDeselect() {
+      if (this.isActive) {
+        this.$emit('unselect', this.message)
+      }
+      this.deleteMessage(this.message.id)
     }
   }
+
+  
 }
 </script>
 
@@ -65,7 +73,7 @@ export default {
       </div>
       <div v-else  class="delete-button">
         <!-- added .stop.prevent to ensure only child click event is fired -->
-       <i class="fa fa-trash" @click.stop.prevent="deleteMessage(message.id)" aria-hidden="true"/>
+       <i class="fa fa-trash" @click.stop.prevent="deleteAndDeselect" aria-hidden="true"/>
       </div>
     </div>
     <!-- preview message div: will render when mouse is hovering over message component -->
