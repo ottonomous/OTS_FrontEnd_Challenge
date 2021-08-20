@@ -1,16 +1,7 @@
-<p align="center" >
-   <img src="https://images.ctfassets.net/gm98wzqotmnx/3Ufcb7yYqcXBDlAhJ30gce/c237bb3254190795b30bf734f3cbc1d4/prefect-logo-full-gradient.svg" width="500" style="max-width: 500px;" alt="Prefect Logo">
-</p>
 
-<p align="center">
-<a href="https://prefect.io">
-    <img src="https://images.ctfassets.net/gm98wzqotmnx/3mwImS57DEydMQXU1FCGG/6e36e2d49faf78cf4a166f123c2c43ca/image__5_.png" height="27" alt="Powered By Prefect">
-    </a>
-</p>
+# Front End Software Engineer Challenge
 
-# Prefect Front End Software Engineer Challenge
-
-Welcome to the Prefect Front End Software Engineer Challenge!
+Welcome to the  Front End Software Engineer Challenge!
 
 This challenge consists of 3 exercises. Do your best to complete all 3, but please spend no more
 than 3 hours total on these; the goal is to get a sense for how you
@@ -31,10 +22,6 @@ Continue reading for project setup and submission.
 - Change the remote to a private GitHub repository under your username
 - Push code to that remote, using clear Commits and Pull Requests with clear messages
 - Code!
-
-## Submission
-
-This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown) as a collaborator to your cloned repository on GitHub. Once you've done so, please send an email to [nicholas@prefect.io](nicholas@prefect.io) to confirm your submission.
 
 ## Local Development
 
@@ -69,11 +56,11 @@ of a portfolio etc.).
 If you plan to make this repository public,
 **please do not do so until after your submission has been graded**
 (we'll let you know when that is!). In addition, please remove or
-replace Prefect in the `<title>` block of the root html
+replace  in the `<title>` block of the root html
 file (found in `/public/index.html`), the
 `<link>` and `<meta>` blocks between
 the comments in that same file, as well as the associated logos in that folder. Last,
-please remove or replace the Prefect logo in the root application file
+please remove or replace the  logo in the root application file
 (found in `/src/App.vue`) and the associated
 `.svg` found in the assets folder.
 
